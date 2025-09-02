@@ -1,6 +1,3 @@
-/* Conteúdo completo para o arquivo main.css */
-
-/* --- ESTILOS GERAIS DA PÁGINA (ADAPTADOS DO ESTILO 404) --- */
 body, html {
     margin: 0;
     padding: 0;
@@ -13,7 +10,7 @@ body, html {
 body {
     /* ONDE A MÁGICA ACONTECE */
     /* Adiciona um gradiente escuro sobre a imagem para o texto ficar legível */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('fundogalos.png'); /* <<< MUDE O NOME DA IMAGEM AQUI */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('fundogalos.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -42,7 +39,6 @@ p {
     text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
 }
 
-/* --- ESTILOS DO CARROSSEL (JÁ EXISTENTES E AJUSTADOS) --- */
 .carrossel-container {
     position: relative;
     width: 80%;

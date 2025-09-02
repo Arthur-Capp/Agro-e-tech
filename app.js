@@ -1,9 +1,3 @@
-/* ==================================================================== */
-/* CÓDIGO INTEGRADO DO CARROSSEL E DA MÚSICA TEMA                     */
-/* ==================================================================== */
-
-// --- 1. CONFIGURAÇÕES GERAIS ---
-
 // Referências aos elementos HTML
 const carrosselSlides = document.querySelector(".carrossel-slides");
 const player = document.getElementById('musica-fundo');
@@ -24,9 +18,6 @@ let indiceAtual = 0;
 
 // Exibe o primeiro slide ao carregar a página
 mostraSlideAtual();
-
-
-// --- 2. FUNÇÕES PRINCIPAIS ---
 
 // Função chamada pelos botões no HTML
 function mudaSlide(direcao) {
