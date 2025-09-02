@@ -1,0 +1,95 @@
+/* Conteúdo completo para o arquivo main.css */
+
+/* --- ESTILOS GERAIS DA PÁGINA (ADAPTADOS DO ESTILO 404) --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    /* ONDE A MÁGICA ACONTECE */
+    /* Adiciona um gradiente escuro sobre a imagem para o texto ficar legível */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('fundogalos.png'); /* <<< MUDE O NOME DA IMAGEM AQUI */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+
+    /* Alinha todo o conteúdo no centro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* --- ESTILOS DO TÍTULO E SUBTÍTULO --- */
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 30px; /* Aumenta o espaço antes do carrossel */
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+/* --- ESTILOS DO CARROSSEL (JÁ EXISTENTES E AJUSTADOS) --- */
+.carrossel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* A sombra agora é mais sutil para combinar com o fundo */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.carrossel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.botao-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.botao-carrossel:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

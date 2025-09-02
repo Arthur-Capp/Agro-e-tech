@@ -1,0 +1,67 @@
+/* Conteúdo para o arquivo estilo-404.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow: hidden; /* Evita barras de rolagem desnecessárias */
+}
+
+body {
+    /* ONDE A MÁGICA ACONTECE */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('galo404.png');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-erro {
+    background-color: rgba(0, 0, 0, 0.3); /* Um fundo semi-transparente para o texto */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 6rem; /* Tamanho grande para o "404" */
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 400;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.subtexto {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.botao-voltar {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffc107; /* Um amarelo/laranja que combina com o tema */
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: #ffa000;
+    transform: scale(1.05);
+}

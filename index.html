@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Galinheiro</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to Galinheiro</h1>
+    <p>Chose Your Cock</p>
+
+    <div class="carrossel-container">
+        <div class="carrossel-slides">
+            <div class="slide">
+                <img src="galo1.jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="galo2.jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="galo3.jpg" alt="Imagem 3">
+            </div>
+        </div>
+
+        <button class="botao-carrossel prev" onclick="mudaSlide(-1)">&#10094;</button>
+        <button class="botao-carrossel next" onclick="mudaSlide(1)">&#10095;</button>
+    </div>
+    
+    <audio id="musica-fundo"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
